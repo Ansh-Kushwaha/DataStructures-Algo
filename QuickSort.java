@@ -1,4 +1,7 @@
-// 1 | QuickSort | 02/01/2023
+// 1 | QuickSort 
+// Author : Ansh Kushwaha | 02/01/2023
+
+pack
 public class QuickSort {
     public  int partition(int arr[], int low, int high) {
         int i = low - 1;

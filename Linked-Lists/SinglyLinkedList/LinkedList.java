@@ -1,4 +1,7 @@
+package SinglyLinkedList;
+
 import java.util.Scanner;
+
 public class LinkedList {
     private Node head;
 
