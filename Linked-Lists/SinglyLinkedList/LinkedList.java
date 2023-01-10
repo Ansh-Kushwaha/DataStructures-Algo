@@ -114,4 +114,9 @@ public class LinkedList {
         }
         System.out.println();
     }
+    
+    public static void main(String[] args) {
+    	LinkedList l = new LinkedList(5);
+    	l.output();
+     }
 }
