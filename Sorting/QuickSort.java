@@ -13,7 +13,7 @@
  * 		3.) quicksort right partition recursively.
  */
 
-package Sorting;
+package sorting;
 
 public class QuickSort {
     public  int partition(int arr[], int low, int high) {

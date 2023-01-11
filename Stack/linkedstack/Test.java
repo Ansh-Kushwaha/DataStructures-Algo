@@ -1,14 +1,14 @@
-package Stack.linkedstack;
+package stack.linkedstack;
 
 import java.util.Scanner;
 
 public class Test {
 	public static void main(String[] args) {
-		LStack<String> stack = new LStack<String>();
-		String s;
+		LStack<Integer> stack = new LStack<Integer>();
+		int s;
 		Scanner sc = new Scanner(System.in);
 		for(int i = 0; i < 5; i++) {
-			s = sc.nextLine();
+			s = sc.nextInt();
 			stack.push(s);
 		}
 		sc.close();

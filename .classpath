@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="Arrays"/>
-	<classpathentry kind="src" path="Linked-Lists"/>
-	<classpathentry excluding="Arrays/|Linked-Lists/" kind="src" path=""/>
+	<classpathentry kind="src" path=""/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

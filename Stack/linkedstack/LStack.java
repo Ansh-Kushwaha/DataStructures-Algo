@@ -1,6 +1,6 @@
 // Author : Ansh Kushwaha | 11/01/2023
 
-package Stack.linkedstack;
+package stack.linkedstack;
 
 public class LStack<T> {
 	private Node<T> top;
@@ -19,16 +19,20 @@ public class LStack<T> {
 	}
 	
 	public void push(T x) {
-		if(isFull())
+		if(isFull()) {
 			System.out.println("Stack Overflow");
+			return;
+		}
 		Node<T> temp = new Node<T>(x);
 		temp.next = top;
 		top = temp;	
 	}
 	
 	public void pop() {
-		if(isEmpty())
+		if(isEmpty()) {
 			System.out.println("Stack Underflow");
+			return;
+		}
 		top = top.next;
 	}
 	
@@ -43,7 +47,7 @@ public class LStack<T> {
 	
 	public int size() {
 		int s = 0;
-		Node temp = top;
+		Node <T>temp = top;
 		while(temp != null) {
 			s++;
 			temp = temp.next;
@@ -52,9 +56,13 @@ public class LStack<T> {
 	}
 	
 	public void output() {
-		Node temp = top;
+		if(isEmpty()) {
+			System.out.println("Stack is empty");
+			return;
+		}
+		Node<T> temp = top;
 		while(temp != null) {
-			System.out.println(temp.val);
+			System.out.println(String.valueOf(temp.val));
 			temp = temp.next;
 		}
 	}

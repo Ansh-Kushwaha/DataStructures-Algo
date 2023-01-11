@@ -8,7 +8,7 @@
  * 		3.) Repeat step 2 while the size of the heap is greater than 1.
  */
 
-package Sorting;
+package sorting;
 
 public class HeapSort {
 	private void heapify(int arr[], int n, int i) {

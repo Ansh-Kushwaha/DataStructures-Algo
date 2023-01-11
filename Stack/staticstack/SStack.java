@@ -1,6 +1,6 @@
 // Author : Ansh Kushwaha | 11/01/2023
 
-package Stack.staticstack;
+package stack.staticstack;
 
 import java.util.ArrayList;
 

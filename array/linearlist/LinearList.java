@@ -1,4 +1,4 @@
-package LinearList;
+package array.linearlist;
 
 import java.util.Scanner;
 
@@ -52,7 +52,7 @@ public class LinearList {
 
     public void insert(int k, int x) { //insert at kth position
         if(!isFull()) {
-            for(int i = currSize; i > k-2; i--) {
+            for(int i = currSize; i > k-1; i--) {
                 elements[i] = elements[i-1];
             }
             elements[k-1] = x;

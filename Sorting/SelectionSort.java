@@ -9,7 +9,7 @@
  * 		5.) Repeat until array is sorted.
  */
 
-package Sorting;
+package sorting;
 
 public class SelectionSort {
 	public void selectionSort(int arr[], int n) {

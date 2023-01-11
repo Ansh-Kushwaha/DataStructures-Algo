@@ -7,7 +7,7 @@
  * 		3.) Print the sorted array
  */
 
-package Sorting;
+package sorting;
 
 public class BubbleSort {
 	public void bubbleSort(int arr[], int n) {

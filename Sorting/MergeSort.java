@@ -9,7 +9,7 @@
  *		4.) Merge both halves sorted in setp 2 and 3.
  */
 
-package Sorting;
+package sorting;
 
 public class MergeSort {
 	public void merge(int arr[], int low, int mid, int high) {

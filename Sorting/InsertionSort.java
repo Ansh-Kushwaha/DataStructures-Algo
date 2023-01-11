@@ -10,7 +10,7 @@
  * 		6.) Repeat until the array is sorted. 
  */
 
-package Sorting;
+package sorting;
 
 public class InsertionSort {
 	public void insertionSort(int arr[], int n) {

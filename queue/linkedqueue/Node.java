@@ -1,11 +1,11 @@
-// Node for Stack
+// Node for Queue
 // Author : Ansh Kushwaha | 11/01/2023
 
-package stack.linkedstack;
+package queue.linkedqueue;
 
 public class Node<T> {
-	public T val;
-	public Node next;
+	T val;
+	Node<T> next;
 	
 	Node() {
 		val = null;

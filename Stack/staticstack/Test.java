@@ -1,4 +1,4 @@
-package Stack.staticstack;
+package stack.staticstack;
 
 import java.util.Scanner;
 

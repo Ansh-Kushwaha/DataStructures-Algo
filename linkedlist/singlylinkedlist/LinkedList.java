@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package linkedlist.singlylinkedlist;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class LinkedList {
             Scanner scan = new Scanner(System.in);
             Node temp = new Node(), last;
             System.out.print("Enter data of element 1 : ");
-            temp.data = scan.nextInt();
+            temp.val = scan.nextInt();
             temp.next = head;
             head = temp;
             last = temp;
@@ -31,7 +31,7 @@ public class LinkedList {
                 for(int i = 2; i <= n; i++) {
                     System.out.print("Enter data of element " + i + " : ");
                     Node temp1 = new Node();
-                    temp1.data = scan.nextInt();
+                    temp1.val = scan.nextInt();
                     temp1.next = last.next;
                     last.next = temp1;
                     last = temp1;
@@ -68,7 +68,7 @@ public class LinkedList {
         Node temp = head;
         int pos = 1;
         while(temp != null) {
-            if(temp.data == x)
+            if(temp.val == x)
                 return pos;
             else
                 temp = temp.next;
@@ -84,7 +84,7 @@ public class LinkedList {
         else
             for(int i = 0; i < k; i++)
                 temp = temp.next;
-        return temp.data;
+        return temp.val;
     }
 
     public void delete(int k) { //delete kth position
@@ -93,7 +93,7 @@ public class LinkedList {
         if(k < 1 || k > length())
             return;
         else if(k == 1) {
-            System.out.println("Deleted " + head.data);
+            System.out.println("Deleted " + head.val);
             head = head.next;
         }
         else {
@@ -102,14 +102,14 @@ public class LinkedList {
                 temp1 = temp1.next;
             temp2 = temp1.next;
             temp1.next = temp2.next;
-            System.out.println("Deleted " + temp2.data);
+            System.out.println("Deleted " + temp2.val);
         }
     }
 
     public void output() {
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.val + " ");
             temp = temp.next;
         }
         System.out.println();
