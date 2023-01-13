@@ -1,15 +1,18 @@
-// Node for Singly Linked List
+// Node for Linked Lists (Single reference)
 // Author : Ansh Kushwaha
 
 package linkedlist.singlylinkedlist;
 
-public class Node {
-    public int val;
-    public Node next;
+public class Node<T> {
+    public T val;
+    public Node<T> next;
 
-    public Node() { }
+    public Node() {
+    	val = null;
+    	next = null;
+    }
 
-    public Node(int x) {
+    public Node(T x) {
         val = x;
         next = null;
     }
