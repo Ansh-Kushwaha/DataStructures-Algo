@@ -3,9 +3,10 @@
 package stack.linkedstack;
 
 public class LStack<T> {
+	
 	private Node<T> top;
 	
-	LStack() {
+	public LStack() {
 		top = null;
 	}
 	

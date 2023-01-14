@@ -61,6 +61,7 @@ public class CircularLL<T> {
 			Node<T> temp = new Node<T>(x);
 			temp.next = temp;
 			last = temp;
+			return;
 		}
 		else if(pos == 1) {
 			Node<T> temp = new Node<T>(x);
@@ -72,6 +73,7 @@ public class CircularLL<T> {
 			temp.next = last.next;
 			last.next = temp;
 			last = temp;
+			return;
 		}
 		else {
 			Node<T> prev = last.next;
@@ -96,11 +98,13 @@ public class CircularLL<T> {
 			Node<T> temp = last.next;
 			System.out.println("Deleted : " + String.valueOf(temp.val));
 			last = null;
+			return;
 		}
 		else if(pos == 1) {
 			Node<T> temp = last.next;
 			System.out.println("Deleted : " + String.valueOf(temp.val));
 			last = temp.next;
+			return;
 		}
 		else if(pos == size) {
 			Node<T> temp = last.next;
@@ -109,6 +113,7 @@ public class CircularLL<T> {
 			System.out.println("Deleted : " + String.valueOf(temp.next.val));
 			temp.next = last.next;
 			last = temp;
+			return;
 		}
 		else {
 			Node<T> prev = last.next;

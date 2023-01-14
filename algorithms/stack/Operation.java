@@ -1,3 +1,5 @@
+// Author : Ansh Kushwaha | 14/01/2023
+
 package algorithms.stack;
 
 import stack.linkedstack.LStack;

@@ -10,13 +10,13 @@ public class SStack<T> {
 	private int maxSize;
 	private int top;
 	
-	SStack() {
+	public SStack() {
 		stackArr = new ArrayList<T>(10);
 		maxSize = 10;
 		top = -1;
 	}
 	
-	SStack(int n) {
+	public SStack(int n) {
 		stackArr = new ArrayList<T>(n);
 		maxSize = n;
 		top = -1;
