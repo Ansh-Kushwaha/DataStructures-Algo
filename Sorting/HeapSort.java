@@ -19,6 +19,7 @@ public class HeapSort {
 		//If left child if larger than root
 		if(l < n && arr[l] > arr[largest])
 			largest = l;
+		//If right child is larger than root and left child
 		if(r < n && arr[r] > arr[largest])
 			largest = r;
 		

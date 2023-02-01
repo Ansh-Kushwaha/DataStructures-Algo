@@ -2,7 +2,7 @@
 // Author : Ansh Kushwaha | 09/01/2023
 
 /* Algorithm :
- * 		1.) Run a nested loop to traverse the input array using two variables i and j, such that 0 <= i < n1 and 0 <= j < n-i-1 
+ * 		1.) Run a nested loop to traverse the input array using two variables i and j, such that 0 <= i < n - 1 and 0 <= j < n-i-1 
  * 		2.) If arr[j] is greater than arr[j+1] swap these adjacent elements, else move on
  * 		3.) Print the sorted array
  */

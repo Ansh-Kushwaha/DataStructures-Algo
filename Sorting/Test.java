@@ -9,11 +9,12 @@ public class Test {
     	// SelectionSort s = new SelectionSort();
         // QuickSort s = new QuickSort();
     	// MergeSort s = new MergeSort();
-    	HeapSort s = new HeapSort();
+    	// HeapSort s = new HeapSort();
+    	Reversort s = new Reversort();
     	
         int arr[] = {34, 26, 5, 2, 100, 4};
         
-        s.heapSort(arr, arr.length);
+        s.reversort(arr, arr.length);
         
         for(int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");

@@ -74,17 +74,7 @@ public class LinearList {
             System.out.println("List is empty.");
     }
 
-    public void reverse() {
-        if(!isEmpty()) {
-            for(int i = 0; i < currSize / 2; i++) {
-                int t = elements[i];
-                elements[i] = elements[currSize - i - 1];
-                elements[currSize - i - 1] = t;
-            }
-        }
-    }
-
-    public void print() {
+    public void output() {
         for(int i = 0; i < currSize; i++) {
             System.out.print(elements[i] + " ");
         }
